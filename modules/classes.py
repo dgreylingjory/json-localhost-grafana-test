@@ -5,7 +5,7 @@ class Random_data:
         self.timestamp = timestamp
     def to_dict(self):
         return {
-            'text': self.text,
+            'label': self.text,
             'value': self.value,
             'timestamp': self.timestamp
         }
