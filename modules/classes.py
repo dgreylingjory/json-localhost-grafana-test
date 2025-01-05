@@ -3,11 +3,13 @@ class Random_data:
         self.text = text
         self.value = value
         self.timestamp = timestamp
-    def to_dict(self):
-        return {
-            'label': self.text,
-            'value': self.value,
-            'timestamp': self.timestamp
-        }
-    def __str__(self):
+    
+    def to_dict(self): ##Turns the instance into a json friendly dict
+        return  {
+                'label': self.text,
+                'value': self.value,
+                'timestamp': self.timestamp
+            }
+        
+    def __str__(self): ##Make the instance pretty for console
         return f'Text: {self.text} Value: {self.value} Time: {self.timestamp}'
